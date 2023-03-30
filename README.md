@@ -1,5 +1,5 @@
-# Site web sur lé débat autour du télétravail : 
-## Est-ce que le télétravail est pérenne pour les salariés ?
+### Site web sur le débat autour du télétravail
+# Est-ce que le télétravail est pérenne pour les salariés ?
 
 ## Structure du site
 - index.html : Page d'accueil. Definition de teletravail, presentation de la controverse, l'historique, les acteurs de la controverse, les arguments pour et contre (liens vers les pages pour.html et contre.html). Lien vers le blog.
@@ -7,17 +7,6 @@
 - contre.html : Les contre de point de vue de chaque actuer.
 - presentation.html : Presentation du site, les objectifs et les raisons pourquoi on l'a cree.
 - team.html : Presentation de l'equipe dans son ensemble. Presentation des membres.
-
-## Repartition des taches
-
-#### Redaction du texte
-- Dziyana
-
-Pages : team.html, pour.html, contre.html.
-
-- Jiayi
-
-Pages : presentation.html, index.html, contact.html.
 
 ## Sources
 - <https://www.youtube.com/watch?v=Mo7R98Tppfc> (video sur le developpement de teletravail dans les pays differents pendant la pandemie - 6 min)
