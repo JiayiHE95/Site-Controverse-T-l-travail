@@ -1,0 +1,295 @@
+/* la mise en page pour tout le site */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  text-align: justify;
+  word-wrap: break-word;
+}
+
+h5 {font-size: 24px;}
+h6{color: black;
+  padding: 0 20px 0;  
+  margin: 20px 0;  
+  line-height: 1px;  
+  border-left: 390px solid #ddd;  
+  border-right: 390px solid #ddd;  
+  text-align: center;  }
+h2,h4,h6 {font-weight: bold; margin: 30px 0;}
+
+.stats {
+  background-color: aliceblue;
+}
+
+li .dropdown-item {font-size: 22px;}
+
+@media(max-width: 768px) {
+  body .img-box {width: 100%; left: 0px;}
+}
+
+/* tout ce qui concerne la barre de navigation */
+
+#sujet {
+  font-size: 28px;
+  font-style: italic;
+  background-color: white;
+  color:rgb(3, 131, 103);
+  line-height: 50px;
+  text-align: center;
+  padding: 10px;
+}
+
+nav {
+  background-color: rgb(3, 131, 103);
+}
+
+.navbar-brand, .nav-item {
+  font-size: 24px;
+  margin-left: 15px;
+}
+
+.nav-link, .navbar-brand {
+    color: white;
+}
+
+/* la page index.html */
+#indexstrong{
+  text-align: center;
+font-size: 22px;
+}
+
+/* la page contacts.html */
+
+.qr {
+  padding: 20px 5px;
+}
+
+thead, tbody {
+  text-align: center;
+}
+
+table {
+  margin: 30px 0px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#score {
+  text-align: left;
+  border: 1px solid black;
+  padding: 12px 20px;
+  height: 50px;
+  width: 50px;
+  margin-left: 50px;
+}
+
+#add {
+  width: 50px;
+  height: 50px;
+}
+
+footer > div {
+  padding-top: 10px;
+}
+
+/* pour tous les images */
+
+.banner {
+  width:100%;
+}
+
+.img-box {
+  position: relative;
+  left: 50px;
+  width: 60%;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.image-text {
+  font-style: italic;
+  font-size: 18px;
+}
+
+/*pour la page team.html*/
+#photoPrésentation{
+  display: flex;
+  flex-direction: row;
+}
+#photoTeam {
+  width: 30%; 
+  height: 30%;
+  margin: auto 30px auto auto;
+  flex-shrink: 1;
+  border-radius: 30px;
+  }
+#Présentationtext{
+  margin: auto;
+}
+#team {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10% 0 0 0;
+}
+
+.teamPre {
+  display: flex;
+  flex-direction: column;
+  width: 35%;}
+
+.teamPhoto {
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.nom {
+  text-align: center;
+  margin: 5% 0;
+  font-weight: bold;
+  color: rgb(3, 131, 103);
+}
+#team p {font-size: 18px;}
+strong {color: rgb(3, 131, 103);}
+@media(max-width: 768px) {
+  h6{
+    border-left: 190px solid #ddd;  
+    border-right: 190px solid #ddd;  }
+  #photoTeam {
+    width: 70%; 
+    height: 70%;
+  margin: 10px auto 30px;}
+  #photoPrésentation{flex-direction: column;}
+  #team{flex-direction: column;
+    align-items: center;}
+  .teamPre {width: 80%;}
+  .teamPre:nth-child(1) {margin-bottom: 10%;}
+  .teamPhoto{border: hidden;}
+}
+
+/*pour la page presentation.html*/
+.presentationProjet p:nth-child(5) {
+  text-align: end;
+  color: rgb(3, 131, 103);
+  font-weight: bold;
+}
+
+/* pour les menus deroulants sur les pages pour.html et contre.html */
+
+/* don't display the text after titles by default */
+.small-title ~ p {
+  display: none;
+}
+
+.small-title ~ ul {
+  display: none;
+}
+
+.small-title ~ blockquote {
+  display: none;
+}
+.small-title ~ input {
+  display: none;
+}
+
+.medium-title ~ div, .medium-title ~ p {
+  display: none;
+}
+
+
+/* titles' styles */
+.small-title {
+  cursor: pointer;
+  background-color:rgb(3, 131, 103);
+  color: white;
+  border-radius: 5px;
+  line-height: 50px;
+  padding-left: 10px;
+  border: solid white 1px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.medium-title {
+  cursor: pointer;
+  color:rgb(3, 131, 103);
+  border-radius: 5px;
+  border: solid rgb(66, 136, 121) 3px;
+  padding: 10px 0px 10px 10px;
+  line-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* expand arrow styles */
+.small-title img {
+  height: 30px;
+  filter: invert();
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.medium-title img {
+  filter: invert(50%)
+}
+
+.medium-title > span, .small-title > span {
+  font-size: 20px;
+  font-weight: normal;
+  font-style: italic;
+  min-width: 50px;
+  height: 50px;
+}
+
+/* change title colors on hover if the screen is not a touchpad */
+@media(hover: hover) {
+  .small-title:hover {
+    color:rgb(3, 131, 103);
+    background-color: aliceblue;
+    border: solid rgb(3, 131, 103) 1px;
+  }
+
+  .small-title:hover img {
+    filter: invert(50%);
+  }
+
+  .medium-title:hover img {
+    filter: invert();
+  }
+
+  .medium-title:hover {
+    color: white;
+    background-color: rgb(3, 131, 103);
+    border: transparent white 3px;
+  }
+}
+
+.reduire {
+  display: none;
+  background-color: transparent;
+  border: solid rgb(3, 131, 103) 1px;
+  color:rgb(3, 131, 103);
+}
+
+.reduire:hover {
+  color: greenyellow;
+  border: solid white 1px;
+  text-decoration: underline;
+}
+
+/*sources style*/
+.sources{
+  margin-top: 150px;
+  font-size: 14px;
+  color: gray;
+}
